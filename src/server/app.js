@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/client", express.static("src/file"));
+app.use("/client", express.static("src/client"));
 app.use("/file", express.static("file"));
 
 app.use("/users", userRouter);
